@@ -33,6 +33,10 @@ button{
     color: white;
 }
 
+img{
+    max-width: 100%
+}
+
 .wrapper{
     width: 1170px;
     box-sizing: border-box;
