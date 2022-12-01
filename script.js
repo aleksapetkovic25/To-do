@@ -58,7 +58,7 @@ function renderTask(){
     if(toDoList.length === 0){
         toDoContainer.innerHTML = `
         <div class="text-center pt-5 empty">
-            <img src="./images/empty-list.png" alt="empty list icon">
+            <img src="https://static.vecteezy.com/system/resources/previews/011/106/127/original/3d-check-list-empty-with-hands-holding-light-bulb-pencil-png.png" alt="empty list icon">
             <p class="py-3">To do list is empty.</p>
         </div>
         `
