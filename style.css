@@ -1,0 +1,170 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #213343;
+    color: #fff;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* ---------- MODAL LEGEND ----------- */
+
+.priority-legend .priority{
+    margin-right: 20px;
+}
+
+.status-legend i{
+    margin-right: 20px;
+}
+
+
+/* -------- END MODAL ---------- */
+
+.hero{
+    max-width: 100%;
+}
+
+button{
+    height: 36px;
+    padding: 0 20px;
+    border: none;
+    color: white;
+}
+
+.wrapper{
+    width: 1170px;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+}
+
+.title{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+    padding-bottom: 5px;
+}
+
+.title span{
+    color: #0096FF;
+}
+
+.form-container{
+    margin-top: 30px;
+    padding: 8px;
+}
+
+.to-do-container{
+    margin-top: 50px;
+}
+
+.form-control.bg-transparent.text-white.to-do-input,
+.custom-select.bg-transparent.text-white{
+    border: none;
+    border-bottom:2px solid rgba(255, 255, 255, 0.699);
+}
+
+.custom-select.bg-transparent.text-white option{
+    background-color: #283c4e;
+}
+
+.form-control.bg-transparent.text-white.to-do-input.error-input,
+.custom-select.bg-transparent.text-white.error-input{
+    border: 2px solid red;
+}
+
+.item-container{
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 15px;
+    box-sizing: content-box;
+    padding: 15px;
+    box-shadow: 0px 1px 1px 0px rgba(85,85,5,1);
+}
+
+.item-container i{
+    font-size: 20px;
+}
+
+.item-container:nth-child(odd){
+    background-color: #16212b;
+}
+
+.item-container:nth-child(even){
+    background-color: #10181f;
+}
+
+.priority{
+    width: 150px;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 15px;
+    color: white;
+}
+
+.tasks-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: content-box;
+}
+.action{
+    margin-left: auto;
+}
+
+.action-btn{
+    border-radius: 8px;
+}
+
+.footer{
+    text-align: center;
+    padding: 10px 0;
+    background-color: #0a1a27;
+    border-top: 1px solid rgba(204, 204, 204, 0.377);
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .wrapper{
+        width: 100%;
+    }
+
+    .task-name{
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 0.5px solid rgba(255, 255, 255, 0.288);
+    }
+
+    .priority{
+        width: 120px;
+    }
+
+    .form-container{
+        max-width: 100%;
+    }
+}
+
+
+
+/* SWALL */
+
+.swal2-confirm.btn.btn-primary.swal2-styled{
+    background-color: #007bff;
+    line-height: 20px;
+}
+
+
+.swal2-cancel.btn.btn-light.swal2-styled{
+    line-height: 20px;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v6.2.1/css/all.css?ver=6.1.1' type='text/css' media='all' />
+    <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="wrapper">
+            <h1 class="text-center title"><span>TO</span> <span>DO</span> LIST</h1>
+            <div class="row form-container">
+                <div class="form-group col-12 col-sm-6">
+                    <input type="text" class="form-control bg-transparent text-white to-do-input" id="to_do-input" placeholder="Task...">
+                </div>
+                <div class="form-group col-8 col-sm-4">
+                    <select class="custom-select bg-transparent text-white" name="priority" id="priority">
+                        <option value="">Select priority</option>
+                        <option value="High priority">High priority</option>
+                        <option value="Low priority">Low priority</option>
+                        <option value="Middle priority">Middle priority</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary col-3 col-sm-2 add-btn" id="add-btn">ADD</button>
+            </div>
+        </div>
+
+        <div class="to-do-container" id="to_do_list-container"></div>
+    </div> <!-- end hero -->
+
+
+    <div class="modal fade" id="to_do-legend" tabindex="-1" role="dialog" aria-labelledby="to_do-legend" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content bg-dark">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title bg-dark" id="exampleModalLabel">To do list legend</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <label>Priority</label>
+              <div class="priority-legend"> 
+                <div class="my-3 d-flex align-items-center"><div class="bg-danger priority">High</div><span>The most important.</span></div>
+                <div class="my-3 d-flex align-items-center"><div class="bg-warning priority">Middle</div><span>Important.</span></div>
+                <div class="my-3 d-flex align-items-center"><div class="bg-success priority">Low</div><span>Less important.</span></div>
+              </div>
+
+              <label>Status</label>
+              <div class="status-legend">
+                <div class="my-3 d-flex align-items-center"><i class="fa-regular fa-hourglass-half"></i><span>Not started yet.</span></div>
+                <div class="my-3 d-flex align-items-center"><i class="fa-solid fa-bars-progress" style="color: #ffc107;"></i><span>In progress.</span></div>
+                <div class="my-3 d-flex align-items-center"><i class="fa-solid fa-circle-check" style="color: #8abc00;"></i><span>Done.</span></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <footer class="footer">
+        &copy; 2022 5ko Coding | All Rights Reserved
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
