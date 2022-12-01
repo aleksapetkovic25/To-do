@@ -50,6 +50,9 @@ addBtn.addEventListener('click', () => {
     toDoList.push(task);
     localStorage.setItem('toDoList', JSON.stringify(toDoList));
     renderTask();
+    
+    toDoInput.value = '';
+    taskPriority.value = '';
 }); 
 
 function renderTask(){
