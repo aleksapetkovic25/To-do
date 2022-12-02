@@ -4,6 +4,7 @@ const taskPriority = document.getElementById('priority');
 const addBtn = document.getElementById('add-btn');
 
 let validate = true;
+let addTask = false;
 
 let toDoList = [];
 
@@ -45,12 +46,13 @@ addBtn.addEventListener('click', () => {
     if(validate === false){
         return;
     }
+    addTask = true;
 
     let task = new Task(toDoInput.value, 0, taskPriority.value);
     toDoList.push(task);
     localStorage.setItem('toDoList', JSON.stringify(toDoList));
     renderTask();
-    
+
     Swal.fire({
         toast: true,
         timer: 3000,
@@ -65,7 +67,7 @@ addBtn.addEventListener('click', () => {
             toast.addEventListener('mouseleave', Swal.resumeTimer)
         }
     });
-    
+
     toDoInput.value = '';
     taskPriority.value = '';
 }); 
@@ -86,6 +88,9 @@ function renderTask(){
 
         const toDoItemContainer = document.createElement('div');
         toDoItemContainer.classList.add('d-flex', 'justify-content-between', 'flex-wrap', 'align-items-center', 'item-container');
+        if(addTask){
+            toDoItemContainer.classList.add('new-box');
+        }
 
         const toDoBtnContainer = document.createElement('div');
         toDoBtnContainer.classList.add('item-btn-container');
