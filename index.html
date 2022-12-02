@@ -14,27 +14,25 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="hero">
-        <div class="wrapper">
-            <h1 class="text-center title"><span>TO</span> <span>DO</span> LIST</h1>
-            <div class="row form-container">
-                <div class="form-group col-12 col-sm-6">
-                    <input type="text" class="form-control bg-transparent text-white to-do-input" id="to_do-input" placeholder="Task...">
-                </div>
-                <div class="form-group col-8 col-sm-4">
-                    <select class="custom-select bg-transparent text-white" name="priority" id="priority">
-                        <option value="">Select priority</option>
-                        <option value="High priority">High priority</option>
-                        <option value="Low priority">Low priority</option>
-                        <option value="Middle priority">Middle priority</option>
-                    </select>
-                </div>
-                <button class="btn btn-primary col-3 col-sm-2 add-btn" id="add-btn">ADD</button>
+    <div class="wrapper">
+        <h1 class="text-center title"><span>TO</span> <span>DO</span> LIST</h1>
+        <div class="row form-container">
+            <div class="form-group col-12 col-sm-6">
+                <input type="text" class="form-control bg-transparent text-white to-do-input" id="to_do-input" placeholder="Task...">
             </div>
+            <div class="form-group col-8 col-sm-4">
+                <select class="custom-select bg-transparent text-white" name="priority" id="priority">
+                    <option value="">Select priority</option>
+                    <option value="High priority">High priority</option>
+                    <option value="Low priority">Low priority</option>
+                    <option value="Middle priority">Middle priority</option>
+                </select>
+            </div>
+            <button class="btn btn-primary col-3 col-sm-2 add-btn" id="add-btn">ADD</button>
         </div>
+    </div>
 
-        <div class="to-do-container" id="to_do_list-container"></div>
-    </div> <!-- end hero -->
+    <div class="to-do-container" id="to_do_list-container"></div>
 
 
     <div class="modal fade" id="to_do-legend" tabindex="-1" role="dialog" aria-labelledby="to_do-legend" aria-hidden="true">
