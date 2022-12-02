@@ -51,6 +51,21 @@ addBtn.addEventListener('click', () => {
     localStorage.setItem('toDoList', JSON.stringify(toDoList));
     renderTask();
     
+    Swal.fire({
+        toast: true,
+        timer: 3000,
+        position: 'bottom-end',
+        showConfirmButton: false,
+        timerProgressBar: true,
+        text: "Successfully added task.",
+        icon: "success",
+        buttonsStyling: false,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    });
+    
     toDoInput.value = '';
     taskPriority.value = '';
 }); 
