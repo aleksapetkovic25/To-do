@@ -22,6 +22,7 @@ body{
 /* -------- END MODAL ---------- */
 
 
+
 button{
     height: 36px;
     padding: 0 20px;
@@ -30,7 +31,7 @@ button{
 }
 
 img{
-    max-width: 100%
+    max-width: 100%;
 }
 
 .wrapper{
@@ -122,6 +123,24 @@ img{
     border-top: 1px solid rgba(204, 204, 204, 0.377);
     margin-top: auto;
 }
+
+
+@keyframes append-animate {
+	from {
+		transform: scale(0);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;	
+	}
+}
+
+/* animate new box */
+.new-box:first-child {
+	animation: append-animate .5s linear;
+}
+
 
 @media screen and (max-width: 1200px) {
     .wrapper{
